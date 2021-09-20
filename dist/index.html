@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Create a database for Guvi-Zen class with clean scenario</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <h1 style="text-align:center"> Create a database for Guvi Zen Class with clean scenario </h1>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div style="text-align:center">
+    <h3>CREATING A DATABASE FOR ZEN-CLASS-DETAILS :</h3>
+
+    use guviZen;<br>
+    db.createCollection("zenClassDetails");<br>
+    db.zenClassDetails.insertMany<br><br>([{
+    "studentName":"Madhan",<br>
+    "ticketCreatedAt" : "02.00.00 PM",<br>
+    "reqId": "SR-001",<br>
+    "queries": "ive just entered the test assessment which is alloted to me but its shows the access code as error. kindly look into this ASAP as im running out of time. Thank you.",<br>
+    "batchNo":"B240"<br>
+    },<br><br>
+
+    {
+    "studentName":"Shan",<br>
+    "ticketCreatedAt" : "03.00.00 PM",<br>
+    "reqId": "SR-002",<br>
+    "queries": "Sir, I have completed a Task Allotted for me and Uploaded it to Github. but I cant Deploy my site in Netlify. All authorization is done in netlify but in the end, it shows the site cannot be deployed. don't know why...Help me out in this sir.",<br>
+    "batchNo":"B241"<br>
+    },<br><br>
+
+    {
+    "studentName":"Mohan",<br>
+    "ticketCreatedAt" : "04.00.00 PM",<br>
+    "reqId": "SR-003",<br>
+    "queries": "Dear Mentor, I've Completed a Calculator task as a part of the Zen Program. I didn't Read the Documentation for the Task properly that it States that it should be done Using DOM. But some Missed Concentration I've Done the task using React. I've Done it for the past two days and I Cannot able to Redo it as it involves Time and Work. Please Give me Permission to Submit the Task using React. Expecting a Positive Reply! Thank you, Shanjay S",<br>
+    "batchNo":"B242"<br>
+
+    },<br><br>
+
+    {
+    "studentName":"KrishnaKanth",<br>
+    "ticketCreatedAt" : "05.00.00 PM",<br>
+    "reqId": "SR-004",<br>
+    "queries": "Dear Mentor, I have Attended Interviews and some Quizzes in guvi as the part of Zen program. but I don't know where I stand till now. kindly share with us the marks of the Interviews and Quizzes we attended till now. Also, Please tell where can we find the Quizzes we Attended for a quick Revision. Thank you. SHAN",<br>
+    "batchNo":"B243"<br>
+
+    },<br><br>
+
+    {
+    "studentName":"KrishnaChander",<br>
+    "ticketCreatedAt" : "06.00.00 PM",<br>
+    "reqId": "SR-005",<br>
+    "queries": "Dear Mentor, I have Received Comments On the SQL Task Submitted and I need clarifications on what the evaluator is trying to say. it will help to finish my MongoDB task based on that. pls reply ASAP as I'm reaching my task deadline on Wednesday. thank you.",<br>
+    "batchNo":"B244"<br>
+
+    }])<br><br>
+  </div>
+  
+  <a href='https://postimages.org/' target='_blank'><img class="photoSize" src='https://i.postimg.cc/SxxG3vW0/Screenshot-15.png' border='0' alt='Screenshot-15'/></a>
+  
+  <div style="text-align:center"><br><br>
+
+    <h3>FINDING ALL DATA OF ZEN-CLASS-DETAILS :</h3>
+
+    use guviZen;<br>
+    db.zenClassDetails.find();<br><br>
+
+ <a href='https://postimages.org/' target='_blank'><img class="photoSize"  src='https://i.postimg.cc/c4JhXCZd/Screenshot-16.png' border='0' alt='Screenshot-16'/></a><br /><a href='https://keyboardtester.co/'></a><br />
+
+  <div style="text-align:center">
+    <h3> CREATING A DATABASE FOR ZEN-MENTOR-DETAILS : </h3>
+
+    use guviZen;<br>
+    db.createCollection("zenMentorDetails");<br>
+    db.zenMentorDetails.insertMany<br><br>([{
+    "MentorName":"SaiMohan",<br>
+    "reqNo" : "SR-001",<br>
+    "queries": "Assessment access code error",<br>
+    "status":true,<br>
+    "action": "Assigned" <br>
+
+    },<br><br>
+
+    {
+    "MentorName":"Suman",<br>
+    "reqNo" : "SR-002",<br>
+    "queries": "Site Deployment in Netlify",<br>
+    "status":true,<br>
+    "action": "Closed & acknowlegeded" <br>
+
+    }, <br><br>
+
+    {
+    "MentorName":"Suman",<br>
+    "reqNo" : "SR-003",<br>
+    "queries": "Task Clarification - Zen Program",<br>
+    "status":true,<br>
+    "action": "Closed & acknowlegeded" <br>
+
+    }, <br><br>
+
+    {
+    "MentorName":"Uma",<br>
+    "reqNo" : "SR-004",<br>
+    "queries": "Task Clarification - Zen Program",<br>
+    "status":true,<br>
+    "action": "Assigned" <br>
+
+    }, <br><br>
+    {
+    "MentorName":"vaishnavan",<br>
+    "reqNo" : "SR-005",<br>
+    "queries": "Task comment Clarifications",<br>
+    "status": false,<br>
+    "action": "Not assigned" <br>
+
+    }])<br><br>
+  </div>
+    
+    
+    <a href='https://postimages.org/' target='_blank'><img class="photoSize" src='https://i.postimg.cc/Y9GGvcwK/Screenshot-17.png' border='0' alt='Screenshot-17'/></a><br /><a href='https://keyboardtester.co/keyboard-tester'></a><br />
+  <div style="text-align:center">
+    <h3> FINDING ALL DATA OF ZEN-MENTOR-DETAILS : </h3>
+
+    use guviZen;<br>
+    db.zenMentorDetails.find();<br>
+  </div><br><br>
+    
+    <a href='https://postimages.org/' target='_blank'><img class="photoSize" src='https://i.postimg.cc/7Ybcbm51/Screenshot-18.png' border='0' alt='Screenshot-18'/></a><br><br>
+    
+  <div style="text-align:center">
+
+    <h3>AGGREGATING BOTH THE DATA INTO SORTED INFORMATION :</h3>
+
+    use guviZen;<br>
+    db.zenClassDetails.aggregate<br><br>([
+    {<br>
+    $lookup:<br><br>
+    {<br>
+    from: "zenMentorDetails",<br>
+    localField: "reqId",<br>
+    foreignField: "reqNo",<br>
+    as: "assigned"<br>
+    }<br><br>
+    }
+    ])
+
+  </div><br>
+    
+    <a href='https://postimages.org/' target='_blank'><img class="photoSize" src='https://i.postimg.cc/7Ybcbm51/Screenshot-18.png' border='0' alt='Screenshot-18'/></a><br>
+    
+  <h4 style="text-align:center">_____THE END _____</h4>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
